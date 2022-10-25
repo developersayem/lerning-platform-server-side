@@ -1,0 +1,22 @@
+[
+  {
+    "id": "01",
+    "Name": "Web Development"
+  },
+  {
+    "id": "02",
+    "Name": "Back End Development"
+  },
+  {
+    "id": "03",
+    "Name": "SEO"
+  },
+  {
+    "id": "05",
+    "Name": "Design"
+  },
+  {
+    "id": "04",
+    "Name": "Personal Development"
+  }
+]
