@@ -14,7 +14,18 @@ app.get("/", (req, res) => {
 app.get("/courses", (req, res) => {
   res.send(courses);
 });
-app.get("/courses-categories", (req, res) => {
+
+app.get("/courses/categories/:id", (req, res) => {
+  const filterData = courses.filter(
+    (data) => data.categories_id === req.params.id
+  );
+  res.send(filterData);
+});
+app.get("/courses/categories/details/:id", (req, res) => {
+  const findData = courses.find((data) => data.id === req.params.id);
+  res.send(findData);
+});
+app.get("/courses_categories", (req, res) => {
   res.send(coursesCategories);
 });
 app.listen(port, () => {
